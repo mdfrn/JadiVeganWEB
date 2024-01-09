@@ -1,0 +1,475 @@
+:root {
+  --green-color: #35b14f;
+  --big-font: 2.5rem;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+}
+
+/* Navbar Style Start */
+img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #fefefe;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo h2 {
+  font-size: 1.5rem;
+}
+
+nav .logo {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  color: #212526;
+  display: block;
+  margin: 0 2px;
+  font-weight: 600;
+  padding: 8px 18px;
+  transition: 0.2s;
+  border-radius: 30px;
+}
+
+nav ul li a:hover {
+  background: rgb(53, 177, 79, 0.05);
+}
+
+nav ul li a.active {
+  background: var(--green-color);
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+  height: fit-content;
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 2px;
+  margin: 6px 0;
+  background: #212526;
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  nav {
+    position: absolute;
+    left: -300px;
+    top: 0;
+    z-index: 999;
+    width: 200px;
+    height: 70vh;
+    background-color: #fefefe;
+    transition: 0.2s;
+    box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  #nav_check:checked ~ nav {
+    left: 0;
+  }
+
+  nav .logo {
+    display: block;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+
+  nav ul {
+    display: block;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+/* Navbar Style End */
+
+/* Popular Recipe Style Start  */
+.recipe {
+  max-width: 800px;
+  border: 1px solid var(--green-color);
+  border-radius: 24px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.recipe h2 {
+  font-size: var(--big-font);
+  margin-bottom: 20px;
+}
+
+.recipe-image {
+  max-width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.recipe-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.recipe-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recipe-info-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.recipe-info-line p {
+  padding-left: 20px;
+  border-top: 2px solid #000;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.recipe-info p {
+  margin: 0;
+}
+
+.recipe-description {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.recipe-ingredients,
+.recipe-steps {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.recipe-ingredients h3,
+.recipe-steps h3 {
+  margin-bottom: 10px;
+}
+
+.recipe-ingredients ul,
+.recipe-steps ol {
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+.recipe-ingredients li,
+.recipe-steps li {
+  margin-bottom: 5px;
+}
+
+.recipe-steps li {
+  text-align: justify;
+}
+
+.recipe-ingredients i,
+.recipe-steps i {
+  margin-right: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .recipe {
+    padding: 10px;
+  }
+}
+/* Responsive Styles End */
+/* Popular Recipe Style End */
+
+/* Review Style Start */
+.review-section {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.section-sentences {
+  margin-bottom: 4rem;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.section-sentences h2 {
+  font-weight: bold;
+  font-size: var(--big-font);
+  margin-bottom: 18px;
+}
+
+.section-sentences p {
+  text-align: justify;
+}
+
+.review-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.review-wrapper {
+  padding: 8px;
+}
+
+.add-your-review-wrapper {
+  min-width: 50%;
+}
+
+.review-list {
+  margin-bottom: 30px;
+}
+
+.review-item {
+  margin-bottom: 30px;
+}
+
+.review-item:last-child {
+  margin-bottom: 0;
+}
+
+.review-author {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.review-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.star-rating {
+  color: #ffc107;
+  margin-right: 5px;
+}
+
+.review-text {
+  font-size: 16px;
+  margin-right: 12px;
+}
+
+.add-review {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check-input {
+  margin-right: 5px;
+}
+
+.form-check-label {
+  margin: 0;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.add-review .section-title {
+  margin-bottom: 20px;
+}
+
+.add-review form {
+  margin-top: 10px;
+  text-align: left;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.add-review .star-rating {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.add-review .star-rating i {
+  cursor: pointer;
+  color: #c5c5c5;
+  transition: color 0.4s;
+}
+
+.add-review .star-rating i.active,
+.add-review .star-rating i:hover {
+  color: #ffc107;
+}
+
+.add-review .btn-review {
+  background-color: var(--green-color);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+.add-review .btn-review:hover {
+  background-color: rgba(53, 177, 79, 0.8);
+}
+
+@media (max-width: 767px) {
+  .review-row {
+    flex-direction: column;
+  }
+}
+/* Review Style End */
+
+/* Popup Style Start */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.popup.show-popup {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-content p {
+  background-color: #fff;
+  padding: 28px;
+  border-radius: 24px;
+  text-align: center;
+}
+/* Popup Style End */
+
+/* Pagination Style Start */
+.pagination-section {
+  margin: 16px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination a {
+  color: #000;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border-radius: 24px;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  border-radius: 24px;
+  background-color: var(--green-color);
+  color: #fff;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 24px;
+}
+/* Pagination Style End */
