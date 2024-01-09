@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<!-- 
+  Author:
+  1. Aditya Farras
+  2. Alya Yulhadi
+  3. Aurio Rajaa
+
+  Class: 2SE1
+  Date Start: May 05 2023
+  Date End: May 15 2023
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>jadivegan</title>
+    <meta
+      name="description"
+      content="Let's join our vegan community now at jadivegan! Find and try our vegan recipe from our skilled chef"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/icons/logo.png" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header>
+      <div class="logo">
+        <img src="assets/icons/logo.png" alt="Logo" />
+        <h2>jadi<span style="color: #35b14f">vegan</span></h2>
+      </div>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav>
+        <div class="logo">
+          <img src="assets/icons/logo.png" alt="Logo" />
+          <h2>jadi<span style="color: #35b14f">vegan</span></h2>
+        </div>
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#contact-us">Contact us</a></li>
+          <li><a href="#try-our-recipe-section">Try our Recipe</a></li>
+        </ul>
+      </nav>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Section Banner Start  -->
+    <section class="banner-section">
+      <div class="banner-content">
+        <h2>jadivegan</h2>
+        <p>Your journey to a plant-based lifestyle</p>
+        <a href="#try-our-recipe-section" class="btn-discover">Discover More</a>
+      </div>
+    </section>
+    <!-- Section Banner End -->
+
+    <!-- About us Section Start -->
+    <section class="about-section" id="about-section">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="assets/images/woman-cooking.jpg" alt="About Image" />
+        </div>
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            At
+            <span style="font-weight: bold"
+              >jadi<span style="font-weight: bold; color: #35b14f"
+                >vegan</span
+              ></span
+            >, we are passionate about promoting a healthy and sustainable
+            plant-based lifestyle.
+          </p>
+          <p>
+            Our mission is to inspire and empower individuals to make conscious
+            food choices that benefit their well-being, the environment, and
+            animal welfare.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About us Section End -->
+
+    <!-- Section Meet Our Chef Start -->
+    <section class="meet-our-chef">
+      <div class="container">
+        <h2 class="section-title">Meet Our Chef</h2>
+        <div class="card-container">
+          <div class="card">
+            <div class="chef-badge">
+              <img src="assets/icons/italy.png" alt="Italy Logo" />
+            </div>
+            <img
+              src="assets/images/chef1.png"
+              class="card-img-top"
+              alt="Chef 1"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Antonio Giuseppe</h6>
+              <p class="card-text">
+                Giuseppe, the passionate Italian chef who loves to share his
+                family's recipes.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="chef-badge">
+              <img src="assets/icons/egypt.png" alt="Egypt Logo" />
+            </div>
+            <img
+              src="assets/images/chef2.png"
+              class="card-img-top"
+              alt="Chef 2"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Mohammed Hassan</h6>
+              <p class="card-text">
+                Hassan, the skilled Egyptian chef who brings a touch of the
+                Middle East to his dishes.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="chef-badge">
+              <img src="assets/icons/finland.png" alt="Finland Logo" />
+            </div>
+            <img
+              src="assets/images/chef3.png"
+              class="card-img-top"
+              alt="Chef 3"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Olliver Frank</h6>
+              <p class="card-text">
+                Frank, the skilled and hearty Finnish chef who cooks with fresh
+                and local ingredients.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Meet Our Chef End  -->
+
+    <!-- Section Recipe Start -->
+    <section class="try-our-recipe" id="try-our-recipe-section">
+      <!-- MAIN (Center website) -->
+      <div class="recipe-gallery">
+        <h1>See Our Recipe</h1>
+        <br />
+        <div id="myBtnContainer">
+          <button class="filter-btn active" onclick="filterSelection('all')">
+            Show all
+          </button>
+          <button class="filter-btn" onclick="filterSelection('nature')">
+            Breakfast
+          </button>
+          <button class="filter-btn" onclick="filterSelection('cars')">
+            Lunch
+          </button>
+          <button class="filter-btn" onclick="filterSelection('people')">
+            Dinner
+          </button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="gallery-row">
+          <div class="gallery-column nature">
+            <div class="gallery-content">
+              <a href="pages/breakfast/breakfast-1.html"
+                ><img
+                  src="assets/images/baked-oatmeal-846x846.jpg"
+                  alt="Baked Oatmeal"
+                  style="width: 100%"
+              /></a>
+
+              <h4>Baked Oatmeal</h4>
+              <a href="pages/breakfast/breakfast-1.html">
+                <p>See more...</p>
+              </a>
+            </div>
+          </div>
+          <div class="gallery-column nature">
+            <div class="gallery-content">
+              <a href="pages/breakfast/breakfast-2.html"
+                ><img
+                  src="assets/images/smoothie-846x846.jpg"
+                  alt="Strawberry Smoothie"
+                  style="width: 100%"
+              /></a>
+              <h4>Strawberry Smoothie</h4>
+              <a href="pages/breakfast/breakfast-2.html">
+                <p>See more...</p>
+              </a>
+            </div>
+          </div>
+          <div class="gallery-column nature">
+            <div class="gallery-content">
+              <a href="pages/breakfast/breakfast-3.html"
+                ><img
+                  src="assets/images/tempeh-846x846.jpg"
+                  alt="Marinated Baked Tempeh"
+                  style="width: 100%"
+              /></a>
+              <h4>Baked Tempeh</h4>
+              <a href="pages/breakfast/breakfast-3.html">
+                <p>See more...</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="gallery-column cars">
+            <div class="gallery-content">
+              <a href="pages/lunch/lunch-1.html"
+                ><img
+                  src="assets/images/broccoli-salad-recipe1-846x846.jpg"
+                  alt="Broccoli Salad"
+                  style="width: 100%"
+              /></a>
+              <h4>Broccoli Salad</h4>
+              <a href="pages/lunch/lunch-1.html">
+                <p>See more...</p>
+              </a>
+            </div>
+          </div>
+          <div class="gallery-column cars">
+            <div class="gallery-content">
+              <a href="pages/lunch/lunch-2.html"
+                ><img
+                  src="assets/images/quiche-recipe-846x846.jpg"
+                  alt="Spinach Quiche"
+                  style="width: 100%"
+              /></a>
+              <h4>Spinach Quiche</h4>
+              <a href="pages/lunch/lunch-2.html">
+                <p>See more...</p>
+              </a>
+            </div>
+          </div>
+          <div class="gallery-column cars">
+            <div class="gallery-content">
+              <a href="pages/lunch/lunch-3.html"
+                ><img
+                  src="assets/images/cannellini-beans-846x846.jpg"
+                  alt="Cannellini Beans"
+                  style="width: 100%"
+              /></a>
+              <h4>Cannellini Beans</h4>
+              <a href="pages/lunch/lunch-3.html">
+                <p>See more...</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="gallery-column people">
+            <div class="gallery-content">
+              <a href="pages/dinner/dinner-1.html"
+                ><img
+                  src="assets/images/mushroom-risotto-846x846.jpg"
+                  alt="Mushroom Risotto"
+                  style="width: 100%"
+              /></a>
+              <h4>Mushroom Risotto</h4>
+              <a href="pages/dinner/dinner-1.html">
+                <p>See more...</p>
+              </a>
+            </div>
+          </div>
+          <div class="gallery-column people">
+            <div class="gallery-content">
+              <a href="pages/dinner/dinner-2.html"
+                ><img
+                  src="assets/images/mac-and-cheese-recipe-846x846.jpg"
+                  alt="Mac and Cheese"
+                  style="width: 100%"
+              /></a>
+              <h4>Mac and Cheese</h4>
+              <a href="pages/dinner/dinner-2.html">
+                <p>See more...</p>
+              </a>
+            </div>
+          </div>
+          <div class="gallery-column people">
+            <div class="gallery-content">
+              <a href="pages/dinner/dinner-3.html"
+                ><img
+                  src="assets/images/sheet-pan-gnocchi-846x846.jpg"
+                  alt="Sheet Pan Gnocchi"
+                  style="width: 100%"
+              /></a>
+              <h4>Sheet Pan Gnocchi</h4>
+              <a href="pages/dinner/dinner-3.html">
+                <p>See more...</p>
+              </a>
+            </div>
+          </div>
+          <!-- END GRID -->
+        </div>
+
+        <!-- END MAIN -->
+      </div>
+    </section>
+    <!-- Section Recipe End-->
+
+    <!-- Section Contact Us Start -->
+    <section class="contact-us-container" id="contact-us">
+      <div class="container">
+        <div class="contact-us">
+          <h3 class="contact-us-title">Contact Us</h3>
+          <form id="contact-form" onsubmit="sendEmail(); return false">
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="5"
+                placeholder="Enter your message"
+                required
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn contact-us-btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Section Contact Us End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <img src="assets/icons/logo.png" alt="Brand Logo" class="brand-logo" />
+      <h3 class="brand-name">jadi<span style="color: #35b14f">vegan</span></h3>
+      <p class="brand-description">
+        jadivegan: Inspiring plant-based living for a better world.
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+      <p class="copyright">© 2023 All Rights Reserved. Group 10 2SE1</p>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Message Contact us Popup Start -->
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+        <p class="popup-message" id="popup-message"></p>
+        <button class="popup-button" id="close-popup">OK</button>
+      </div>
+    </div>
+    <!-- Message Contact us Popup End -->
+
+    <!-- Scroll to Top btn -->
+    <button id="scroll-to-top" title="Go to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <!-- Scroll to Top btn -->
+
+    <script src="app.js" async defer></script>
+    <script
+      src="https://kit.fontawesome.com/7c7f68c3e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </body>
+</html>
