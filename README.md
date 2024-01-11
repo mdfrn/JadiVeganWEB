@@ -1,1 +1,0 @@
-Welcome to the Vegan Web project! This web application aims to provide a platform for individuals interested in veganism, offering information, resources, and a supportive community for those pursuing a vegan lifestyle. Whether you're a seasoned vegan or just starting your journey, this website has something for everyone.
